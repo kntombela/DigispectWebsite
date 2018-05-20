@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bespoke Digital Solutions in South Africa | Digispect</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Digispect mobile app digital bcm resilience software">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Content/images/icons/ic_logo.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+
+    @RenderBody()
+
+    <!--===============================================================================================-->
+    <script src="~/Content/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/vendor/countdowntime/moment.min.js"></script>
+    <script src="~/Content/vendor/countdowntime/moment-timezone.min.js"></script>
+    <script src="~/Content/vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+    <script src="~/Content/vendor/countdowntime/countdowntime.js"></script>
+    <script>
+        $('.cd100').countdown100({
+            /*Set Endtime here*/
+            /*Endtime must be > current time*/
+            endtimeYear: 2018,
+            endtimeMonth: 05,
+            endtimeDate: 31,
+            endtimeHours: 0,
+            endtimeMinutes: 0,
+            endtimeSeconds: 0,
+            timeZone: "Africa/Johannesburg"
+            // ex:  timeZone: "America/New_York"
+            //go to " http://momentjs.com/timezone/ " to get timezone
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/Content/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/Content/js/main.js"></script>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
